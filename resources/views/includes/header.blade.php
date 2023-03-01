@@ -22,22 +22,12 @@ $menu = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'video
             </ul>
             @endforeach
 
-            <!-- <ul class="fw-bold">
-                <li><a href="{{ Route('characters') }}" class="text-uppercase">Characters</a></li>
-                <li><a href="{{ Route('comics') }}" class="text-uppercase">Comics</a></li>
-                <li><a href="{{ Route('movies') }}" class="text-uppercase">Movies</a></li>
-                <li><a href="{{ Route('tv') }}" class="text-uppercase">TV</a></li>
-                <li><a href="{{ Route('games') }}" class="text-uppercase">Games</a></li>
-                <li><a href="{{ Route('collectibles') }}" class="text-uppercase">Collectibles</a></li>
-                <li><a href="{{ Route('videos') }}" class="text-uppercase">Videos</a></li>
-                <li><a href="{{ Route('fans') }}" class="text-uppercase">Fans</a></li>
-                <li><a href="{{ Route('news') }}" class="text-uppercase">News</a></li>
-                <li><a href="{{ Route('shop') }}" class="text-uppercase">Shop</a></li>
-            </ul> -->
             <div><input id="searchbar" type="text"  placeholder="Search" class="mt-4"></div>
 
 
         </div>
     </nav>
+
+    <div class="jumbotron"></div>
     
 </header>
