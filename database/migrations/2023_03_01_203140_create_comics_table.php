@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title')->unique();
             $table->text('description');
             $table->string('thumb');
-            $table->decimal('price', 6 , 2);
+            $table->string('price');
             $table->string('series')->nullable();
             $table->date('sale_date')->nullable();
             $table->string('type')->nullable();
