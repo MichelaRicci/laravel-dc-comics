@@ -17,12 +17,9 @@ use App\Http\Controllers\ComicController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::resource('comics', ComicController::class);
+Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 
-// Route::get('/', function () {
-//     $comics = config('comics');
-//     return view('home', compact('comics'));
-// })->name('comics');
+Route::get('/comics/{id}', [ComicController::class, 'show'])->name('comics.show');
 
 Route::get('/characters', function () {
     return view('characters');

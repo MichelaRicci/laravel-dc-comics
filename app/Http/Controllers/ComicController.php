@@ -13,20 +13,6 @@ class ComicController extends Controller
         return view('comics.index', compact('comics'));
     }
 
-    public function store(Request $request)
-    {
-        $data = $request->all();
-        $comic = new Comic();
-
-
-        $comic->fill($data);
-
-        $comic->save();
-
-        
-        return to_route('comics.index');
-    }
-
 
     public function show(string $id)
     {

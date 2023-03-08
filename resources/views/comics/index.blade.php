@@ -11,10 +11,8 @@
             <div class="row flewx-wrap">
                 @foreach ($comics as $comic)
                 <div class="cards">
-                    <figure>
-                        <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
-                    </figure>
-                    <div class="text-uppercase text-white">{{ $comic['series'] }}</div>
+                <a href="{{route('comics.show', $comic->id)}}"><figure><img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}"></figure></a>
+                <div class="text-uppercase text-white">{{ $comic['series'] }}</div>
                 </div>
                 @endforeach
             </div>
@@ -24,3 +22,4 @@
         </div>
     </section>
 @endsection
+
