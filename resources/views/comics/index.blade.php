@@ -17,7 +17,10 @@
                 @endforeach
             </div>
             <div class="btn d-flex">
-                <button class="bg-primary text-uppercase text-white fw-bold load-btn">Load More</button>
+            <a href="{{route('comics.create')}}"class="bg-primary text-uppercase text-white fw-bold load-btn">
+                <h4>Add comic</h4>
+            </a>
+               
             </div>
         </div>
     </section>

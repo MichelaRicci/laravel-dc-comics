@@ -16,6 +16,7 @@
     <main>
         <div>
             @yield('home-content')
+            @yield('main-content')
         </div> 
     </main>
     @include('includes.footer')
